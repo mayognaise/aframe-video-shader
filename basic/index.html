@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>A-Frame Video Shader - Basic</title>
+    <script src="../build.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common.css"/>
+  </head>
+  <body>
+    <a-scene>
+
+      <!-- assets -->
+      <a-assets>
+        <video id="bbb" src="bbb.mp4"><video>
+      </a-assets>
+
+      <!-- bbb -->
+      <a-entity class="video" geometry="primitive:box;width:4;height:2.15;depth:2;" rotation="30 30 0" position="0 2 0" material="shader:video;src:#bbb;"></a-entity>
+
+      <!-- sky -->
+      <a-sky color="pink"></a-sky>
+      
+    </a-scene>
+    
+    <div class="spacer"></div>
+    <div class="spacer2"></div>
+
+  </body>
+</html>
+

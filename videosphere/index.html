@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>A-Frame Video Shader - Videosphere</title>
+    <script src="../build.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common.css"/>
+  </head>
+  <body>
+    <a-scene>
+
+      <!-- assets -->
+      <a-assets>
+        <video id="city" src="city_1.mp4"><video>
+      </a-assets>
+
+      <!-- videosphere -->
+      <a-entity class="video" geometry="primitive:sphere;radius:5000;" material="shader:video;src:#city;" scale="-1 1 1"></a-entity>
+
+    </a-scene>
+    
+    <div class="spacer"></div>
+    <div class="spacer2"></div>
+
+  </body>
+</html>
+
