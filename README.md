@@ -37,18 +37,16 @@ For refference, please check the following links:
 - [Flat Shading Model](https://aframe.io/docs/core/shaders.html#Flat-Shading-Model)
 
 
+[MediaElement properties](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#Properties) will be supported soon.
+
+
 ## Method
 
-The following method is coming soon.
-
-- play()
-- pause()
-- togglePlayback()
-- nextFrame()
-- paused()
+[MediaElement methods](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#Methods) will be supported soon.
 
 
 ## Events
+
 
 [Media events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events) will be supported soon.
 
