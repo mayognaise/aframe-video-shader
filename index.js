@@ -1,5 +1,4 @@
 import { inlineVideo } from './lib/inline-video'
-import timeout from 'callback-timeout'
 
 
 if (typeof AFRAME === 'undefined') {
