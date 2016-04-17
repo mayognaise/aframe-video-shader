@@ -43,6 +43,7 @@
     "budo": "^8.2.1",
     "callback-timeout": "^2.0.0",
     "ghpages": "0.0.3",
+    "json-loader": "^0.5.4",
     "webpack": "^1.12.15"
   },
   "dependencies": {
