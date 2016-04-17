@@ -2,11 +2,11 @@
   "name": "aframe-video-shader",
   "version": "0.1.0",
   "description": "A shader to display video for A-Frame VR.",
-  "main": "index.js",
+  "main": "dist/aframe-video-shader.js",
   "scripts": {
     "build": "webpack -p examples/main.js examples/build.js",
     "dev": "budo examples/main.js:build.js --dir examples --port 8000 --live -- -t babelify",
-    "dist": "webpack index.js dist/aframe-video-component.js && webpack -p index.js dist/aframe-video-component.min.js",
+    "dist": "webpack index.js dist/aframe-video-shader.js && webpack -p index.js dist/aframe-video-shader.min.js",
     "postpublish": "npm run dist",
     "preghpages": "npm run build && rm -rf gh-pages && cp -r examples gh-pages",
     "ghpages": "npm run preghpages && ghpages -p gh-pages"
@@ -17,7 +17,7 @@
   },
   "keywords": [
     "aframe",
-    "aframe-component",
+    "aframe-shader",
     "aframe-vr",
     "vr",
     "aframe-layout",
