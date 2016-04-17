@@ -6,7 +6,7 @@ A shader to display Video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam
 **[DEMO](https://mayognaise.github.io/aframe-video-shader/basic/index.html)**
 
 
-** This was made for inline video playback for iPhone. If you only support desktop/android, please use [`flat`](https://aframe.io/docs/core/shaders.html#Flat-Shading-Model) instead for better performance.
+**This was made for inline video playback for iPhone. If you only support desktop/android, please use [`flat`](https://aframe.io/docs/core/shaders.html#Flat-Shading-Model) instead for better performance.**
 
 
 ![example](example.gif)
@@ -17,8 +17,8 @@ A shader to display Video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam
 - Basic material's properties are supported.
 - The property is pretty much same as `flat` shader besides `repeat`. Will update it soon.
 - `autoplay` will be useful when [Method](#method) is ready.
-- **`muted` is so far always true.** Will be supported soon.
-- **`loop` is so far always true.** Will be supported soon.
+- **`muted` is currently always true.** Will be supported soon.
+- **`loop` is currently always true.** Will be supported soon.
 - `filter` property will be supported soon.
 
 | Property | Description | Default Value |
@@ -26,8 +26,8 @@ A shader to display Video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam
 | src | image url. @see [Textures](https://aframe.io/docs/components/material.html#Textures)| null |
 | autoplay | play automatecally once it's ready| true |
 | preload | preload video (this works for only desktop)| true |
-| muted | mute or unmute| true |
-| loop | loop video| true |
+| muted | mute or unmute| true (**currently always true.**) |
+| loop | loop video| true (**currently always true.**) |
 | fps | video fps| 60 |
 | volume | video volume | undefined |
 
