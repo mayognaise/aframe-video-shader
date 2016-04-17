@@ -1,6 +1,6 @@
-# AFrame GIF Shader
+# AFrame Video Shader
 
-A shader to display Video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam3](https://github.com/Jam3)'s [ios-video-test](https://github.com/Jam3/ios-video-test)
+A shader to display video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam3](https://github.com/Jam3)'s [ios-video-test](https://github.com/Jam3/ios-video-test)
 
 
 **[DEMO](https://mayognaise.github.io/aframe-video-shader/basic/index.html)**
