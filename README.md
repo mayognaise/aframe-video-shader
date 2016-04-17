@@ -5,8 +5,14 @@ A shader to display video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam
 
 **[DEMO](https://mayognaise.github.io/aframe-video-shader/basic/index.html)**
 
+## Notes
 
-**This was made for inline video playback for iPhone. If you only support desktop/android, please use [`flat`](https://aframe.io/docs/core/shaders.html#Flat-Shading-Model) instead for better performance.**
+- **This was made for inline video playback for iPhone. If you only support desktop/android, please use [`flat`](https://aframe.io/docs/core/shaders.html#Flat-Shading-Model) instead for better performance.**
+ 
+
+## Limitation
+
+- **Currently only videos under SAME DOMAIN can be played with any browsers on iOS devices and desktop Safari.**
 
 
 ![example](example.gif)
