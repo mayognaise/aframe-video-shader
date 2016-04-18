@@ -45,6 +45,7 @@ AFRAME.registerShader('video', {
     loop: { default: true },
     fps: { default: 60 },
     volume: { default: undefined },
+    pause: { default: false },
 
   },
 
@@ -164,7 +165,7 @@ AFRAME.registerShader('video', {
    * @param {Object} data - Material component data.
    */
   __updateTexture (data) {
-    const { src, autoplay, muted, volume, loop, fps } = data
+    const { src, autoplay, muted, volume, loop, fps, pause } = data
 
     /* autoplay */
     if (typeof autoplay === 'boolean') { this.__autoplay = autoplay }
@@ -174,6 +175,14 @@ AFRAME.registerShader('video', {
     /* preload */
     if (typeof preload === 'boolean') { this.__preload = preload }
     else if (typeof preload === 'undefined') { this.__preload = this.schema.preload.default }
+
+    /* pause */
+    if (pause) {
+      this.pause()
+    }
+    else {
+      this.play()
+    }
 
     /* muted */
     this.__muted = true

@@ -15,15 +15,28 @@
       </a-assets>
 
       <!-- bbb -->
-      <a-entity class="video" geometry="primitive:box;width:4;height:2.15;depth:2;" rotation="30 30 0" position="0 2 0" material="shader:video;src:#bbb;"></a-entity>
+      <a-entity id="video" geometry="primitive:box;width:4;height:2.15;depth:2;" rotation="30 30 0" position="0 2 0" material="shader:video;src:#bbb;"></a-entity>
 
       <!-- sky -->
       <a-sky color="pink"></a-sky>
       
     </a-scene>
     
+    <div class="buttons novr">
+      <a href="javascript:togglePlayback()">toggle playback</a>
+    </div>
+
     <div class="spacer"></div>
     <div class="spacer2"></div>
+
+    <script type="text/javascript">
+    function togglePlayback () {
+      var el = document.getElementById('video')
+      var material = Object.assign({}, el.getAttribute('material'))
+      material.pause = !material.pause
+      el.setAttribute('material', material)
+    }
+    </script>
 
   </body>
 </html>

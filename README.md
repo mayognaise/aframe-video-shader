@@ -15,7 +15,7 @@ A shader to display video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam
 ## Limitation
 
 - **Currently only videos under SAME DOMAIN can be played with any browsers on iOS devices and desktop Safari.**
-- Large/long video often gets error. More about limitation, please see [here](https://github.com/Jam3/ios-video-test#limitations)
+- **Large/long video mostly gets error. More about limitation, please see [here](https://github.com/Jam3/ios-video-test#limitations)**
 
 
 
@@ -28,6 +28,7 @@ A shader to display video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam
 - **`muted` is currently always true.** Will be supported soon.
 - **`loop` is currently always true.** Will be supported soon.
 - `filter` property will be supported soon.
+- `pause` controls the playback.
 
 | Property | Description | Default Value |
 | -------- | ----------- | ------------- |
@@ -38,6 +39,7 @@ A shader to display video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam
 | loop | loop video| true (**currently always true.**) |
 | fps | video fps| 60 |
 | volume | video volume | undefined |
+| pause | video playback | false |
 
 For refference, please check the following links:
 - [Material](https://aframe.io/docs/components/material.html)

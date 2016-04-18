@@ -95,7 +95,8 @@
 	    muted: { default: true },
 	    loop: { default: true },
 	    fps: { default: 60 },
-	    volume: { default: undefined }
+	    volume: { default: undefined },
+	    pause: { default: false }
 
 	  },
 
@@ -226,6 +227,7 @@
 	    var volume = data.volume;
 	    var loop = data.loop;
 	    var fps = data.fps;
+	    var pause = data.pause;
 
 	    /* autoplay */
 
@@ -243,6 +245,13 @@
 	      this.__preload = preload;
 	    } else if (typeof preload === 'undefined') {
 	      this.__preload = this.schema.preload.default;
+	    }
+
+	    /* pause */
+	    if (pause) {
+	      this.pause();
+	    } else {
+	      this.play();
 	    }
 
 	    /* muted */
