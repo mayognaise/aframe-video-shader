@@ -44,8 +44,6 @@
     "budo": "^8.2.1",
     "ghpages": "0.0.3",
     "json-loader": "^0.5.4",
-    "raf": "^3.2.0",
-    "right-now": "^1.0.0",
     "run-parallel": "^1.1.6",
     "webpack": "^1.12.15"
   }
