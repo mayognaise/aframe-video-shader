@@ -31,3 +31,6 @@ html {
   pointer-events: none;
   height: 1px;
 }
+body[data-vr="true"] .novr{
+  display: none;
+}
