@@ -15,7 +15,7 @@ A shader to display video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam
 ## Limitation
 
 - **Currently only videos under SAME DOMAIN can be played with any browsers on iOS devices and desktop Safari.**
-
+- Large/long video often gets error. More about limitation, please see [here](https://github.com/Jam3/ios-video-test#limitations)
 
 
 
