@@ -66,8 +66,6 @@
 	/* store data so that you won't load same data */
 	var videoData = {};
 
-	var effect = 0;
-
 	/* create error message */
 	function createError(err, src) {
 	  return { status: 'error', src: src, message: err, timestamp: Date.now() };
@@ -108,7 +106,6 @@
 	  init: function init(data) {
 
 	    log('init', data);
-	    log(this.el.components);
 	    this.__cnv = document.createElement('canvas');
 	    this.__cnv.width = 2;
 	    this.__cnv.height = 2;
@@ -566,14 +563,6 @@
 	    this.pause();
 	    this.__clearCanvas();
 	    this.__textureSrc = null;
-	    this.__startTime = 0;
-	    // this.__nextFrameTime = 0
-	    // this.__frameIdx = 0
-	    // this.__frameCnt = 0
-	    // this.__delayTimes = null
-	    // this.__infinity = false
-	    // this.__loopCnt = 0
-	    // this.__frames = null
 	  }
 	});
 

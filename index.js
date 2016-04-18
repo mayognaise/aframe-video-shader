@@ -1,6 +1,5 @@
 import { inlineVideo } from './lib/inline-video'
 
-
 if (typeof AFRAME === 'undefined') {
   throw 'Component attempted to register before AFRAME was available.'
 }
@@ -15,8 +14,6 @@ const log = debug('shader:video:debug')
 
 /* store data so that you won't load same data */
 const videoData = {}
-
-let effect = 0
 
 /* create error message */
 function createError (err, src) {
@@ -58,7 +55,6 @@ AFRAME.registerShader('video', {
   init (data) {
 
     log('init', data)
-    log(this.el.components)
     this.__cnv = document.createElement('canvas')
     this.__cnv.width = 2
     this.__cnv.height = 2
@@ -474,14 +470,6 @@ AFRAME.registerShader('video', {
     this.pause()
     this.__clearCanvas()
     this.__textureSrc = null
-    this.__startTime = 0
-    // this.__nextFrameTime = 0
-    // this.__frameIdx = 0
-    // this.__frameCnt = 0
-    // this.__delayTimes = null
-    // this.__infinity = false
-    // this.__loopCnt = 0
-    // this.__frames = null
   },
 
 

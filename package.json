@@ -1,12 +1,12 @@
 {
   "name": "aframe-video-shader",
-  "version": "0.1.4",
-  "description": "A shader to display video for A-Frame VR.",
-  "main": "dist/aframe-video-shader.js",
+  "version": "0.1.5",
+  "description": "A shader to render DOM Element for A-Frame VR.",
+  "main": "dist/aframe-vid-shader.js",
   "scripts": {
     "build": "webpack -p examples/main.js examples/build.js",
     "dev": "budo examples/main.js:build.js --dir examples --port 8000 --live -- -t babelify",
-    "dist": "webpack index.js dist/aframe-video-shader.js && webpack -p index.js dist/aframe-video-shader.min.js",
+    "dist": "webpack index.js dist/aframe-vid-shader.js && webpack -p index.js dist/aframe-vid-shader.min.js",
     "postpublish": "npm run dist",
     "preghpages": "npm run build && rm -rf gh-pages && cp -r examples gh-pages",
     "ghpages": "npm run preghpages && ghpages -p gh-pages"
@@ -24,6 +24,7 @@
     "mozvr",
     "webvr",
     "video",
+    "canvas",
     "shader",
     "material"
   ],
@@ -41,11 +42,11 @@
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "budo": "^8.2.1",
-    "callback-timeout": "^2.0.0",
     "ghpages": "0.0.3",
     "json-loader": "^0.5.4",
     "raf": "^3.2.0",
     "right-now": "^1.0.0",
+    "run-parallel": "^1.1.6",
     "webpack": "^1.12.15"
   }
 }

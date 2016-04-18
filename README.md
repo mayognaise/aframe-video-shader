@@ -69,7 +69,8 @@ Install and use by directly including the [browser files](dist):
 <head>
   <title>My A-Frame Scene</title>
   <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-  <script src="https://rawgit.com/mayognaise/aframe-video-shader/master/dist/aframe-video-shader.min.js"></script>
+  <!-- NOTE: somehow `aframe-video-shader` makes error 😢 so it's been `aframe-vid-shader.min.js` for now -->
+  <script src="https://rawgit.com/mayognaise/aframe-video-shader/master/dist/aframe-vid-shader.min.js"></script>
 </head>
 
 <body>
