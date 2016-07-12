@@ -1,5 +1,7 @@
 # AFrame Video Shader
 
+**iOS 10 supports inline video so do not use this and just wait for it 😆**
+
 A shader to display video for [A-Frame](https://aframe.io) VR. Inspired by [@Jam3](https://github.com/Jam3)'s [ios-video-test](https://github.com/Jam3/ios-video-test)
 
 
